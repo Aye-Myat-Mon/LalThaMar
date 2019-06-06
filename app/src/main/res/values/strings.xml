@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LalThaMar</string>
+    <string name="str_get_started">စသုံးမယ်</string>
+    <string name="str_nav_home">ပင်မစာမျက်နှာ</string>
+    <string name="str_nav_notification">အသိပေးချက်များ</string>
+    <string name="str_nav_profile">ကိုယ်ရေးမှတ်တမ်း</string>
+    <string name="str_nav_setting">ပြင်ဆင်ချက်</string>
+
+</resources>
