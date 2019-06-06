@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,7 @@
     android:background="@color/colorNoScheduleBg"
     tools:context=".MainActivity">
 
-    <ViewFlipper
+    <com.amm.test.lalthamar.utils.ViewFlipperIndicator
         android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -38,7 +38,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/gallery_2" />
 
-    </ViewFlipper>
+    </com.amm.test.lalthamar.utils.ViewFlipperIndicator>
 
     <LinearLayout
         android:id="@+id/first_row"
@@ -47,9 +47,8 @@
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
-        android:layout_marginTop="@dimen/margin_16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewFlipper">
+        android:layout_marginTop="-28dp"
+        android:layout_below="@id/viewFlipper">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="120dp"
@@ -74,14 +73,18 @@
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/gallery_3" />
+                        android:src="@drawable/ic_plant" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imgCategory1"
                         android:layout_centerHorizontal="true"
-                        android:text="Forcast"/>
+                        android:text="@string/str_technilogy"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
 
                 </RelativeLayout>
             </FrameLayout>
@@ -111,56 +114,23 @@
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/gallery_3" />
+                        android:src="@drawable/ic_newspaper" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imgCategory3"
                         android:layout_centerHorizontal="true"
-                        android:text="Forcast"/>
+                        android:text="@string/str_news"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
 
                 </RelativeLayout>
             </FrameLayout>
 
         </com.google.android.material.card.MaterialCardView>
-
-        <!--<com.google.android.material.card.MaterialCardView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_weight="1"
-            android:layout_margin="@dimen/margin_8"
-            app:cardCornerRadius="@dimen/margin_4"
-            android:background="@color/white">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="120dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imgCategory2"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_centerHorizontal="true"
-                        android:contentDescription="@null"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/gallery_3" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/imgCategory2"
-                        android:layout_centerHorizontal="true"
-                        android:text="Forcast"/>
-
-                </RelativeLayout>
-            </FrameLayout>
-
-        </com.google.android.material.card.MaterialCardView>-->
 
     </LinearLayout>
 
@@ -172,8 +142,7 @@
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/first_row">
+        android:layout_below="@id/first_row">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="120dp"
@@ -198,14 +167,18 @@
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/gallery_3" />
+                        android:src="@drawable/ic_bargain" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imgCategory5"
                         android:layout_centerHorizontal="true"
-                        android:text="Forcast"/>
+                        android:text="@string/str_market"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
 
                 </RelativeLayout>
             </FrameLayout>
@@ -235,14 +208,18 @@
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@null"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/gallery_3" />
+                        android:src="@drawable/ic_question" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imgCategory6"
                         android:layout_centerHorizontal="true"
-                        android:text="Forcast"/>
+                        android:text="@string/str_q_a"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
 
                 </RelativeLayout>
             </FrameLayout>
@@ -288,5 +265,98 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/third_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_below="@id/sec_row">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_8"
+            app:cardCornerRadius="@dimen/margin_4"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgCategory2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_rating" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgCategory2"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/str_points"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_8"
+            app:cardCornerRadius="@dimen/margin_4"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgCategory4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_gift_box" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgCategory4"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/str_luckydraw"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:textColor="@color/dark_grey_blue"
+                        android:fontFamily="@font/padauk_bold"
+                        android:textSize="@dimen/fonts_body_14"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

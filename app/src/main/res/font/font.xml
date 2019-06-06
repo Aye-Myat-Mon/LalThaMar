@@ -20,4 +20,8 @@
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/pyidaungsu_numbers" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lobster_regular" />
 </font-family>

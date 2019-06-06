@@ -8,8 +8,7 @@
     <dimen name="fonts_title_fonts_size">28sp</dimen>
     <dimen name="fonts_body_1_size">14sp</dimen>
     <dimen name="fonts_18_size">18sp</dimen>
-    <dimen name="font_size_title">20sp</dimen>
-    <dimen name="font_size_body">18sp</dimen>
+    <dimen name="font_size_title">28sp</dimen>
     <dimen name="border_thickness">1dp</dimen>
     <dimen name="font_size_12">12sp</dimen>
     <dimen name="margin_4">4dp</dimen>

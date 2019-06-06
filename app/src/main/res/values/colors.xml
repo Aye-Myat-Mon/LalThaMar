@@ -38,7 +38,7 @@
     <color name="colorMakeup">#edeff0</color>
     <color name="colorDullText">@color/battleship_grey</color>
     <color name="colorCoursePlace">#007fff</color>
-    <color name="colorCollapseBar">#ffffff</color>
+    <color name="colorBlackIndicator">#E600cc55</color>
     <color name="color_password_background">#f2fbff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorNoScheduleBg">#f2f2f2</color>
@@ -50,7 +50,7 @@
     <color name="colorProgressBorder">#edeff0</color>
     <color name="colorProgress">#007fff</color>
     <color name="colorProgressRipple">#cce6ff</color>
-    <color name="colorWidgetTitle">#64707d</color>
+    <color name="colorWelcome">#376403</color>
     <color name="colorProgressWidgetActivated">#0080ff</color>
     <color name="colorProfileView">#edeff0</color>
     <color name="colorRadioText">#00aaff</color>
