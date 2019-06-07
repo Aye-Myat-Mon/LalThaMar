@@ -141,7 +141,8 @@
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
-        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
         android:layout_below="@id/first_row">
 
         <com.google.android.material.card.MaterialCardView
@@ -357,6 +358,5 @@
         </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
-
 
 </RelativeLayout>
